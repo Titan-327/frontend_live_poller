@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PollPage from "./pages/pollpage.jsx"
+import PollPage from "./pages/pollpage.jsx";
 import Dashboard from "./pages/Dashboard";
 
 import Login from "./pages/Login.jsx";
