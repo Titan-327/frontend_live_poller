@@ -25,7 +25,7 @@ const PollPage = () => {
   /* ---------------- SOCKET: CONNECT ON PAGE ENTER ---------------- */
   useEffect(() => {
     if (!poll) return;
-
+     if (!poll.isActive) return;
     socketRef.current = io("https://backend-live-poller.onrender.com");
 
     socketRef.current.emit("join_poll", { pollId });
